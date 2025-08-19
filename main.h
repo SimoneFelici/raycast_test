@@ -21,6 +21,21 @@
 # include <stdint.h>
 # include "./minilibx/mlx.h"
 
+typedef struct s_dda
+{
+	int		map_check_x;
+	int		map_check_y;
+	// (vRayLength1D nel tutorial)
+	double	side_dist_x;
+	double	side_dist_y;
+	// (vRayUnitStepSize nel tutorial)
+	double	delta_dist_x;
+	double	delta_dist_y;
+	// (vStep nel tutorial)
+	int		step_x;
+	int		step_y;
+}	t_dda;
+
 typedef struct s_player
 {
     double x;
