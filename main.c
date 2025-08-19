@@ -103,8 +103,6 @@ void	draw_player_2d(t_game *game)
 //	draw_circle(game, player_screen_x, player_screen_y, 2, 0x0000FF);
 }
 
-// main.c
-
 void	draw_ray_2d(t_game *game, int screen_x)
 {
 	double	camera_x;
@@ -210,7 +208,7 @@ int key_press_handler(int keycode, t_game *game)
 	if (keycode == KEY_W)
 	{
 		double new_x;
-		double new_y; 
+		double new_y;
 
 		new_x = game->player.x + game->player.dir_x * move_speed;
 		new_y = game->player.y + game->player.dir_y * move_speed;
